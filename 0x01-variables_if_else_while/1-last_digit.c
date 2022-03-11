@@ -1,19 +1,20 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * *main - entry point
- *  *Print the last digit of n
- *   *Return (0) on success
+
+/**
+ *  * main - entry point
+ *
+ *    * Description: last number
+ *
+ *     * Return: 0 on success
  */
 int main(void)
-	
 {
-	int n;
-	int x;
+int n;
+int x;
 
 	srand(time(0));
-
 	n = rand() - RAND_MAX / 2;
 x = n % 10;
 if (x > 5)
@@ -26,7 +27,8 @@ else if (x == 0)
 }
 else
 {
-printf("Last digit of %i is %i and is less than 6 and not 0\n", n, x);
+	printf("Last digit of %i is %i and is less than 6 and not 0\n", n, x);
 }
-	return (0);
+
+return (0);
 }

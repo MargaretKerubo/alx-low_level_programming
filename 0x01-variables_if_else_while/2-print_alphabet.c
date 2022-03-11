@@ -6,7 +6,7 @@
 int main()
 {
 	int l = 'a';
-		for (int l = 'a'; l <= 'z'; l++;)
+		for (l = 'a'; l <= 'z'; l++);
 		{
 			putchar(l);
 		}

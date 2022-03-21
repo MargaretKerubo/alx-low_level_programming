@@ -11,13 +11,18 @@
  */
 void print_rev(char *s)
 {
-	int len = 0, index;
+	int i = 0;
+	int total_caracters = 0;
+	int c = 0;
 
-	while (s[index++])
-		len++;
+	while (s[i] != 0)
+	{
+		i++;
+	}
+	total_caracters = i - 1;
 
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
+	for (c = 0; c <= total_caracters; c++)
+		_putchar(s[total_caracters - c]);
 
 	_putchar('\n');
 }

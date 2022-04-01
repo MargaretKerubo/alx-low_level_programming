@@ -4,7 +4,6 @@
  */
 
 #include "main.h"
-#include <stddef.h>
 
 /**
  * _strlen - Returns the length of a string.
@@ -12,12 +11,14 @@
  *
  * Return: The length of @str.
  */
-size_t _strlen(const char *str)
+int _strlen(char *s)
 {
-	size_t length = 0;
+	int i;
+	int length = 0;
 
-	while (*str++)
+	for (i = 0; s[i] != '\0'; i++)
+	{
 		length++;
-
+	}
 	return (length);
 }

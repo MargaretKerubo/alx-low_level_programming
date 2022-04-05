@@ -1,0 +1,1 @@
+difference btw automatic and dynamic location.
